@@ -25,13 +25,11 @@ app.get('/recepti/:sastojci', (req, res) => res.json(data.pretragaRecepataSastoj
 app.get('/recepti/:naziv', (req, res) => res.json(data.pretragaRecepataNaziv));
 
 //dohvat komentara
-app.get('/recepti/:id/komentar', (req, res) => res.json(data.komentarRecepta));
+app.get('/recepti/:id/komentari', (req, res) => res.json(data.komentarRecepta));
 
-//dohvat ocjene
-app.get('/recepti/:id/ocjena', (req, res) => res.json(data.ocjenaRecepta));
 
 // unos jednog komentara
-app.put('/recepti/:id/komentar', (req, res)  => {
+app.post('/recepti/:id/komentari', (req, res)  => {
     let data = req.body;
 
     if (!data.komentar) {
@@ -42,12 +40,12 @@ app.put('/recepti/:id/komentar', (req, res)  => {
     }
 
     res.statusCode = 201;
-    res.setHeader('Location', '/recepti/00146299/komentar');
+    res.setHeader('Location', '/recepti/00146299/komentari/1234');
     res.send();
 });
 
 // unos jedne ocjene
-app.put('/recepti/:id/ocjena', (req, res)  => {
+app.post('/recepti/:id/ocjene', (req, res)  => {
     let data = req.body;
 
     if (!data.ocjena) {

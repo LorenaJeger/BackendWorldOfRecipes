@@ -81,7 +81,6 @@ let data = {
          kategorija: 'deserti',
              slika: 'tiramisu.jpg',
          postedBy: 'lili',
-         komentar: 'predobar recept',
          ocjena: '5'
          },
      },
@@ -121,93 +120,21 @@ let data = {
      },
  
      komentarRecepta: {
-     data: {
-        recepti: {
-          id: '00146299',
-                 naziv: 'Tiramisu',
-                 priprema: 'Žumanjce izmiksati sa šećerom u prahu i staviti da se kuha na pari oko 15-20 minuta dok se ne zgusne. Kad se dobro ohladi dodati mascarpone sir i malo umutiti. Posebno umutiti slatko vrhnje te to dodati predhodnoj smjesi i ponovo umutiti mikserom. Piškote umakati u procjeđenu crnu kavu kojoj se doda malo ruma i slagati na tacnu(pola piškota ide,dva reda po 12 komada)te na to stavimo kremu, pa opet natopljene piškote(dva reda po 12 komada) pa ostatak kreme.Sve to pospemo kakao prahom radi dekoracije.',
-                 sastojci: [
-                 {
-                  sastojak: 'žumanjci',
-                  kolicina: '2',
-                 },
-                 {
-                  sastojak: 'šećer_u_prahu',
-                  kolicina: '100 grama',
-                 },
-                 {
-                  sastojak: 'mascarpone',
-                  kolicina: '300 grama',
-                 },
-                 {
-                  sastojak: 'slatko_vrhnje',
-                  kolicina: '150 grama',
-                 },
-                 {
-                  sastojak: 'piškote',
-                  kolicina: '200 grama',
-                 },
-                 {
-                  sastojak: 'kava',
-                  kolicina: '',
-                 },
-                 {
-                  sastojak: 'rum',
-                  kolicina: '',
-                 },
-               ],
-                 vrijeme: '30 minuta',
-         kategorija: 'deserti',
-                 slika: 'tiramisu.jpg',
-         postedBy: 'lili',
-            },
-        komentar: 'predobar recept',
-         },
+     data: [
+  {
+    "komentar": "Predobar recept",
+    "autor": "Lorena",
+    "Recept_id": "1234"
+  },
+  {
+    "komentar": "Super receot",
+    "autor": "Renata",
+    "Recept_id": "1234"
+  }
+     ]
+
      },
-     ocjenaRecepta: {
-     data: {
-        recepti: {
-          id: '00146299',
-                 naziv: 'Tiramisu',
-                 priprema: 'Žumanjce izmiksati sa šećerom u prahu i staviti da se kuha na pari oko 15-20 minuta dok se ne zgusne. Kad se dobro ohladi dodati mascarpone sir i malo umutiti. Posebno umutiti slatko vrhnje te to dodati predhodnoj smjesi i ponovo umutiti mikserom. Piškote umakati u procjeđenu crnu kavu kojoj se doda malo ruma i slagati na tacnu(pola piškota ide,dva reda po 12 komada)te na to stavimo kremu, pa opet natopljene piškote(dva reda po 12 komada) pa ostatak kreme.Sve to pospemo kakao prahom radi dekoracije.',
-                 sastojci: [
-                 {
-                  sastojak: 'žumanjci',
-                  kolicina: '2',
-                 },
-                 {
-                  sastojak: 'šećer_u_prahu',
-                  kolicina: '100 grama',
-                 },
-                 {
-                  sastojak: 'mascarpone',
-                  kolicina: '300 grama',
-                 },
-                 {
-                  sastojak: 'slatko_vrhnje',
-                  kolicina: '150 grama',
-                 },
-                 {
-                  sastojak: 'piškote',
-                  kolicina: '200 grama',
-                 },
-                 {
-                  sastojak: 'kava',
-                  kolicina: '',
-                 },
-                 {
-                  sastojak: 'rum',
-                  kolicina: '',
-                 },
-               ],
-                 vrijeme: '30 minuta',
-         kategorija: 'deserti',
-                 slika: 'tiramisu.jpg',
-         postedBy: 'lili',
-            },
-        ocjena: '5',
-         },
-     },
+     
  };
  
  export default data;
